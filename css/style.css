@@ -2,15 +2,48 @@
   --background-black: #212121;
   --button-black: #343434;
   --dark-red: #660000;
-  --medium-red: #8B0000;
+  --medium-red: #8b0000;
   --regular-red: #a50021;
   --platinum: #e5e4e2;
   --white-text: #f5f5f5;
 }
 
-
-
-
 .background {
   background-color: #212121;
 }
+
+/*  ---------------  sign in css ---------------  */
+html,
+body {
+  height: 100%;
+}
+.btn {
+  --bs-btn-hover-border-color: var(--regular-red);
+}
+.btn-log {
+  background-color: var(--regular-red);
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* */
+
+/* --------------- sign in css END ---------------  */
