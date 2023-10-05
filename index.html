@@ -15,54 +15,119 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Document</title>
   </head>
+
   <body class="background">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand brand1" href="#">
+        <img class="logo" src="./icons/littleSiteOfHorrorsLogo.svg" alt="Bootstrap"/></a>
+        <button
+          class="navbar-toggler custom-nav-hamburger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="custom-nav-link" aria-current="page" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="custom-nav-link" href="#">Profile</a>
+            </li>
+            <a class="navbar-brand brand2" href="#">
+              <img
+                class="logo"
+                src="./icons/littleSiteOfHorrorsLogo.svg"
+                alt="Bootstrap"
+            /></a>
+            <li class="nav-item">
+              <a class="custom-nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="custom-nav-link" href="#">Discussion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-
-    <div class="container my-5">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
+    <main class="container d-flex">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <div class="card custom-all-movies-card">
+            <div class="card-body">
+              <button class="btn custom-all-movies-button">
+                See All Movies
+              </button>
+            </div>
           </div>
         </div>
-      </nav>
 
-      <button type="button" class="btn btn-lg">See all Movies</button>
-
-      <footer>
-        <div class="container p-4">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4">
-              <h5 class="mb-3">About Us</h5>
-              <p>Little Site of Horrors About Us</p>
+        <div class="col-sm-12 col-lg-6">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="./icons/draculaPoster.webp"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="" alt="Second slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="" alt="Third slide" />
+              </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="mb-1">Little Site of Horrors</h5>
-              <!-- ADD IN LOGO AND COPYRIGHT HERE -->
-            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <!-- Copyright -->
-      </footer>
-    </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
