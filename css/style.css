@@ -23,6 +23,9 @@ body {
 .btn-log {
   background-color: var(--regular-red);
 }
+.btn-log1 {
+  background-color: var(--regular-red);
+}
 
 .form-signin {
   max-width: 330px;
